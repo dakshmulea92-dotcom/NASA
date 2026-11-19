@@ -1,0 +1,6 @@
+{
+  "name": "ARC LUNA — LUNASIGHT",
+  "description": "Advanced Lunar Navigation, Intelligence & Mission Simulation Platform powered by official NASA LRO/LOLA, Moon Trek, SVS, SPICE-compatible ephemeris, and NASA POWER datasets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

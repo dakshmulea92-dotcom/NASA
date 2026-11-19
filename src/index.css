@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-display: 'Outfit', system-ui, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+    --bg-cosmic: #070514;
+    --bg-surface: #0e0a24;
+    --bg-elevated: #151034;
+    --accent-solar: #f97316;
+    --accent-aurora: #a855f7;
+    --accent-teal: #2dd4bf;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-cosmic);
+    background-image:
+      radial-gradient(ellipse 75% 45% at 15% 0%, rgba(168, 85, 247, 0.12), transparent 65%),
+      radial-gradient(ellipse 65% 45% at 85% 5%, rgba(249, 115, 22, 0.1), transparent 60%);
+    color: #f1f5f9;
+    letter-spacing: 0.005em;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Precision scrollbars matching cosmic indigo & solar accent palette */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070514;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2b235a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4c3d99;
+}
